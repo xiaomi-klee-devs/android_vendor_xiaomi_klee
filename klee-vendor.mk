@@ -1117,7 +1117,6 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.core-impl-mediatek \
     android.hardware.bluetooth.audio-impl-mediatek \
     android.hardware.security.keymint-V3-ndk-v36 \
-    android.hardware.sensors@2.0-ScopedWakelock \
     com.xiaomi.camdfx \
     com.xiaomi.camhal.extmodel.ec_executor \
     com.xiaomi.camhal.extmodel.intent_aware_sys \
