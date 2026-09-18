@@ -2776,7 +2776,7 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "android.hardware.security.keymint-V3-ndk-v36",
-                "libbase",
+                "libbase-v36",
                 "libhardware",
                 "libc++",
                 "libc",
@@ -3855,6 +3855,31 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libtinyalsa",
                 "liblog",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libbase-v36",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libbase-v36.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libc++",
                 "libc",
                 "libm",
                 "libdl",
@@ -7656,7 +7681,7 @@ cc_prebuilt_library_shared {
                 "android.hardware.security.secureclock-V1-ndk",
                 "android.hardware.security.sharedsecret-V1-ndk",
                 "lib_android_keymaster_keymint_utils-v36",
-                "libbase",
+                "libbase-v36",
                 "libbinder_ndk",
                 "libcppbor",
                 "libcrypto",
@@ -7691,7 +7716,7 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "android.hardware.security.keymint-V3-ndk-v36",
-                "libbase",
+                "libbase-v36",
                 "libbinder_ndk",
                 "libcppbor",
                 "libcppcose_rkp",
@@ -7724,7 +7749,7 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "android.hardware.security.keymint-V3-ndk-v36",
-                "libbase",
+                "libbase-v36",
                 "libcrypto",
                 "libutils",
                 "libhardware",
@@ -36383,7 +36408,7 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "liblog",
-                "libbase",
+                "libbase-v36",
                 "libcrypto",
                 "libutils",
                 "libbinder",
@@ -38887,7 +38912,7 @@ cc_prebuilt_binary {
                 "android.hardware.security.secureclock-V1-ndk",
                 "android.hardware.security.sharedsecret-V1-ndk",
                 "lib_android_keymaster_keymint_utils-v36",
-                "libbase",
+                "libbase-v36",
                 "libbinder_ndk",
                 "libcrypto",
                 "libhardware",
