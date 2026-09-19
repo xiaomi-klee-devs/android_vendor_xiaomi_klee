@@ -37901,30 +37901,6 @@ prebuilt_apex {
 }
 
 android_app_import {
-    name: "HotwordEnrollmentXGoogleRISCV_WIDEBAND",
-    owner: "xiaomi",
-    apk: "proprietary/system_ext/priv-app/HotwordEnrollmentXGoogleRISCV_WIDEBAND/HotwordEnrollmentXGoogleRISCV_WIDEBAND.apk",
-    certificate: "platform",
-    dex_preopt: {
-        enabled: false,
-    },
-    privileged: true,
-    system_ext_specific: true,
-}
-
-android_app_import {
-    name: "HotwordEnrollmentYGoogleRISCV_WIDEBAND",
-    owner: "xiaomi",
-    apk: "proprietary/system_ext/priv-app/HotwordEnrollmentYGoogleRISCV_WIDEBAND/HotwordEnrollmentYGoogleRISCV_WIDEBAND.apk",
-    certificate: "platform",
-    dex_preopt: {
-        enabled: false,
-    },
-    privileged: true,
-    system_ext_specific: true,
-}
-
-android_app_import {
     name: "ImsService",
     owner: "xiaomi",
     apk: "proprietary/system_ext/priv-app/ImsService/ImsService.apk",
@@ -38029,15 +38005,6 @@ dex_import {
         "proprietary/vendor/framework/androidx.camera.extensions.impl.jar",
     ],
     soc_specific: true,
-}
-
-dex_import {
-    name: "com.android.hotwordenrollment.common.util",
-    owner: "xiaomi",
-    jars: [
-        "proprietary/system_ext/framework/com.android.hotwordenrollment.common.util.jar",
-    ],
-    system_ext_specific: true,
 }
 
 dex_import {
@@ -38552,6 +38519,14 @@ cc_prebuilt_binary {
         none: true,
     },
     prefer: true,
+    soc_specific: true,
+}
+
+sh_binary {
+    name: "chipinfo",
+    owner: "xiaomi",
+    src: "proprietary/vendor/bin/chipinfo",
+    filename: "chipinfo",
     soc_specific: true,
 }
 
