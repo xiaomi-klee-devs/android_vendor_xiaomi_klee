@@ -2073,7 +2073,6 @@ PRODUCT_PACKAGES += \
     libapuwarexrp.mtk \
     libapuwarexrp_v2.mtk \
     libarmnn_ndk.mtk \
-    libaudiotoolkit \
     libcmdl_ndk.mtk \
     libcomutils \
     libimsma \
@@ -2113,27 +2112,6 @@ PRODUCT_PACKAGES += \
     libtflite_mtk.mtk \
     libvcodec_cap \
     libvcodec_capenc \
-    libvoicerecognition \
-    libvoicerecognition_jni \
-    libvow_ap_train_dddd \
-    libvow_ap_train_hhaa \
-    libvow_ap_train_hhha \
-    libvow_ap_train_hhhh \
-    libvow_ap_train_nnnn \
-    libvow_ap_train_trip_dddd \
-    libvow_ap_train_trip_hhaa \
-    libvow_ap_train_trip_hhha \
-    libvow_ap_train_trip_hhhh \
-    libvow_ap_train_trip_nnnn \
-    libvow_ap_train_trip_znnn \
-    libvow_ap_train_vaca_dddd \
-    libvow_ap_train_vaca_hhaa \
-    libvow_ap_train_vaca_hhha \
-    libvow_ap_train_vaca_hhhh \
-    libvow_ap_train_vaca_nnnn \
-    libvow_ap_train_vaca_znnn \
-    libvow_ap_train_znnn \
-    libvow_comp_train \
     libvt_avsync \
     vendor.mediatek.hardware.apuware.apusys-V5-ndk \
     vendor.mediatek.hardware.apuware.apusys@1.0 \
@@ -2308,7 +2286,6 @@ PRODUCT_PACKAGES += \
     ImsService \
     MtkGbaService \
     MtkTelephonyAssist \
-    VoiceCommand \
     OpticalTestTool_klee \
     goodix_sz_klee \
     mediatek-ims-base \
