@@ -383,6 +383,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/klee/proprietary/system/etc/public.libraries-mtk.txt:$(TARGET_COPY_OUT_SYSTEM)/etc/public.libraries-mtk.txt \
     vendor/xiaomi/klee/proprietary/system_ext/etc/init/android.hardware.audio.parameter_parser.service.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/android.hardware.audio.parameter_parser.service.rc \
     vendor/xiaomi/klee/proprietary/system_ext/etc/init/init.vtservice.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.vtservice.rc \
+    vendor/xiaomi/klee/proprietary/system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.hotwordenrollment.common.util.xml \
     vendor/xiaomi/klee/proprietary/system_ext/etc/sysconfig/com.mediatek.ims.config.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/com.mediatek.ims.config.xml \
     vendor/xiaomi/klee/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/port_select.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/port_select.db \
     vendor/xiaomi/klee/proprietary/vendor/data/model/VEdynamic.dla:$(TARGET_COPY_OUT_VENDOR)/data/model/VEdynamic.dla \
@@ -738,11 +739,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/klee/proprietary/vendor/etc/p10_42_02_0b_dsc_vdo_dbi.bin:$(TARGET_COPY_OUT_VENDOR)/etc/p10_42_02_0b_dsc_vdo_dbi.bin \
     vendor/xiaomi/klee/proprietary/vendor/etc/permissions/android.hardware.identity_credential.mitee.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.identity_credential.mitee.xml \
     vendor/xiaomi/klee/proprietary/vendor/etc/permissions/camera_extensions.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/camera_extensions.xml \
-    vendor/xiaomi/klee/proprietary/vendor/etc/permissions/com.mediatek.hardware.vow.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.mediatek.hardware.vow.xml \
     vendor/xiaomi/klee/proprietary/vendor/etc/permissions/com.mediatek.hardware.vow.gva.tflite.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.mediatek.hardware.vow.gva.tflite.xml \
+    vendor/xiaomi/klee/proprietary/vendor/etc/permissions/com.mediatek.hardware.vow.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.mediatek.hardware.vow.xml \
     vendor/xiaomi/klee/proprietary/vendor/etc/permissions/com.mediatek.hardware.vow_dsp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.mediatek.hardware.vow_dsp.xml \
-    vendor/xiaomi/klee/proprietary/system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.hotwordenrollment.common.util.xml \
-    vendor/xiaomi/klee/proprietary/system_ext/framework/com.android.hotwordenrollment.common.util.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/com.android.hotwordenrollment.common.util.jar \
     vendor/xiaomi/klee/proprietary/vendor/etc/pq_flag.xml:$(TARGET_COPY_OUT_VENDOR)/etc/pq_flag.xml \
     vendor/xiaomi/klee/proprietary/vendor/etc/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt \
     vendor/xiaomi/klee/proprietary/vendor/etc/sensor_diag.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/sensor_diag.cfg \
@@ -2074,30 +2073,9 @@ PRODUCT_PACKAGES += \
     libapuwarexrp.mtk \
     libapuwarexrp_v2.mtk \
     libarmnn_ndk.mtk \
+    libaudiotoolkit \
     libcmdl_ndk.mtk \
     libcomutils \
-    libvoicerecognition \
-    libvoicerecognition_jni \
-    libaudiotoolkit \
-    libvow_comp_train \
-    libvow_ap_train_dddd \
-    libvow_ap_train_hhaa \
-    libvow_ap_train_hhha \
-    libvow_ap_train_hhhh \
-    libvow_ap_train_nnnn \
-    libvow_ap_train_trip_dddd \
-    libvow_ap_train_trip_hhaa \
-    libvow_ap_train_trip_hhha \
-    libvow_ap_train_trip_hhhh \
-    libvow_ap_train_trip_nnnn \
-    libvow_ap_train_trip_znnn \
-    libvow_ap_train_vaca_dddd \
-    libvow_ap_train_vaca_hhaa \
-    libvow_ap_train_vaca_hhha \
-    libvow_ap_train_vaca_hhhh \
-    libvow_ap_train_vaca_nnnn \
-    libvow_ap_train_vaca_znnn \
-    libvow_ap_train_znnn \
     libimsma \
     libimsma_adapt \
     libimsma_rtp \
@@ -2135,6 +2113,27 @@ PRODUCT_PACKAGES += \
     libtflite_mtk.mtk \
     libvcodec_cap \
     libvcodec_capenc \
+    libvoicerecognition \
+    libvoicerecognition_jni \
+    libvow_ap_train_dddd \
+    libvow_ap_train_hhaa \
+    libvow_ap_train_hhha \
+    libvow_ap_train_hhhh \
+    libvow_ap_train_nnnn \
+    libvow_ap_train_trip_dddd \
+    libvow_ap_train_trip_hhaa \
+    libvow_ap_train_trip_hhha \
+    libvow_ap_train_trip_hhhh \
+    libvow_ap_train_trip_nnnn \
+    libvow_ap_train_trip_znnn \
+    libvow_ap_train_vaca_dddd \
+    libvow_ap_train_vaca_hhaa \
+    libvow_ap_train_vaca_hhha \
+    libvow_ap_train_vaca_hhhh \
+    libvow_ap_train_vaca_nnnn \
+    libvow_ap_train_vaca_znnn \
+    libvow_ap_train_znnn \
+    libvow_comp_train \
     libvt_avsync \
     vendor.mediatek.hardware.apuware.apusys-V5-ndk \
     vendor.mediatek.hardware.apuware.apusys@1.0 \
@@ -2304,12 +2303,12 @@ PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.idmanager-V1-ndk \
     vendor.xiaomi.hardware.mediaeventgatherservice-V1-ndk \
     com.google.android.widevine.nonupdatable \
-    ImsService \
     HotwordEnrollmentXGoogleRISCV_WIDEBAND \
     HotwordEnrollmentYGoogleRISCV_WIDEBAND \
-    VoiceCommand \
+    ImsService \
     MtkGbaService \
     MtkTelephonyAssist \
+    VoiceCommand \
     OpticalTestTool_klee \
     goodix_sz_klee \
     mediatek-ims-base \
@@ -2318,6 +2317,7 @@ PRODUCT_PACKAGES += \
     mediatek-telephony-base \
     mediatek-telephony-common \
     androidx.camera.extensions.impl \
+    com.android.hotwordenrollment.common.util \
     mediatek-ims-extension-plugin \
     CommandService.xml \
     android.hardware.audio.effect.service-aidl.xml \
