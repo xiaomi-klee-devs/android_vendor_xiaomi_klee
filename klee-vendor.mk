@@ -738,6 +738,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/klee/proprietary/vendor/etc/p10_42_02_0b_dsc_vdo_dbi.bin:$(TARGET_COPY_OUT_VENDOR)/etc/p10_42_02_0b_dsc_vdo_dbi.bin \
     vendor/xiaomi/klee/proprietary/vendor/etc/permissions/android.hardware.identity_credential.mitee.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.identity_credential.mitee.xml \
     vendor/xiaomi/klee/proprietary/vendor/etc/permissions/camera_extensions.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/camera_extensions.xml \
+    vendor/xiaomi/klee/proprietary/vendor/etc/permissions/com.mediatek.hardware.vow.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.mediatek.hardware.vow.xml \
+    vendor/xiaomi/klee/proprietary/vendor/etc/permissions/com.mediatek.hardware.vow.gva.tflite.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.mediatek.hardware.vow.gva.tflite.xml \
+    vendor/xiaomi/klee/proprietary/vendor/etc/permissions/com.mediatek.hardware.vow_dsp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.mediatek.hardware.vow_dsp.xml \
     vendor/xiaomi/klee/proprietary/vendor/etc/pq_flag.xml:$(TARGET_COPY_OUT_VENDOR)/etc/pq_flag.xml \
     vendor/xiaomi/klee/proprietary/vendor/etc/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt \
     vendor/xiaomi/klee/proprietary/vendor/etc/sensor_diag.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/sensor_diag.cfg \
@@ -2071,6 +2074,28 @@ PRODUCT_PACKAGES += \
     libarmnn_ndk.mtk \
     libcmdl_ndk.mtk \
     libcomutils \
+    libvoicerecognition \
+    libvoicerecognition_jni \
+    libaudiotoolkit \
+    libvow_comp_train \
+    libvow_ap_train_dddd \
+    libvow_ap_train_hhaa \
+    libvow_ap_train_hhha \
+    libvow_ap_train_hhhh \
+    libvow_ap_train_nnnn \
+    libvow_ap_train_trip_dddd \
+    libvow_ap_train_trip_hhaa \
+    libvow_ap_train_trip_hhha \
+    libvow_ap_train_trip_hhhh \
+    libvow_ap_train_trip_nnnn \
+    libvow_ap_train_trip_znnn \
+    libvow_ap_train_vaca_dddd \
+    libvow_ap_train_vaca_hhaa \
+    libvow_ap_train_vaca_hhha \
+    libvow_ap_train_vaca_hhhh \
+    libvow_ap_train_vaca_nnnn \
+    libvow_ap_train_vaca_znnn \
+    libvow_ap_train_znnn \
     libimsma \
     libimsma_adapt \
     libimsma_rtp \
@@ -2278,6 +2303,7 @@ PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.mediaeventgatherservice-V1-ndk \
     com.google.android.widevine.nonupdatable \
     ImsService \
+    VoiceCommand \
     MtkGbaService \
     MtkTelephonyAssist \
     OpticalTestTool_klee \
