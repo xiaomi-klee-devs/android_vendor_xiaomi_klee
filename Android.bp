@@ -38871,6 +38871,7 @@ cc_prebuilt_binary {
                 "proprietary/system/bin/spkcal",
             ],
             shared_libs: [
+                "libaudiobase",
                 "liblog",
                 "libutils",
                 "libaudioclient",
