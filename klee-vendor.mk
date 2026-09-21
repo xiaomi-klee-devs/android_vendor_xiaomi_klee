@@ -1245,6 +1245,7 @@ PRODUCT_PACKAGES += \
     libaudiotoolkit_vendor \
     libaurisysdemo \
     libawinicsmartpaparse \
+    libbase-v36 \
     libbessound_hd_mtk_vendor \
     libblisrc32_vendor \
     libbluetooth_audio_session_aidl_mtk \
@@ -1321,6 +1322,7 @@ PRODUCT_PACKAGES += \
     libcom.xiaomi.timer \
     libcomposer_ext \
     libconnfem \
+    libcppcose_rkp_prebuilt \
     libcustom_nvram \
     libcvsd_mtk \
     libdapparamstorage \
