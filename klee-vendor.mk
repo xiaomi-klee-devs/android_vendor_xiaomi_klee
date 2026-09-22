@@ -608,7 +608,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/klee/proprietary/vendor/etc/init/android.hardware.gnss-service.mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss-service.mediatek.rc \
     vendor/xiaomi/klee/proprietary/vendor/etc/init/android.hardware.graphics.composer@3.3-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.composer@3.3-service.rc \
     vendor/xiaomi/klee/proprietary/vendor/etc/init/android.hardware.identity@5.0-service.mitee.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.identity@5.0-service.mitee.rc \
-    vendor/xiaomi/klee/proprietary/vendor/etc/init/android.hardware.media.c2-mediatek-64b.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.media.c2-mediatek-64b.rc \
     vendor/xiaomi/klee/proprietary/vendor/etc/init/android.hardware.neuralnetworks-shim-service-mtk.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.neuralnetworks-shim-service-mtk.rc \
     vendor/xiaomi/klee/proprietary/vendor/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc \
     vendor/xiaomi/klee/proprietary/vendor/etc/init/android.hardware.security.keymint.mitee@3.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint.mitee@3.0-service.rc \
@@ -746,8 +745,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/klee/proprietary/vendor/etc/permissions/com.mediatek.hardware.vow_dsp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.mediatek.hardware.vow_dsp.xml \
     vendor/xiaomi/klee/proprietary/vendor/etc/pq_flag.xml:$(TARGET_COPY_OUT_VENDOR)/etc/pq_flag.xml \
     vendor/xiaomi/klee/proprietary/vendor/etc/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt \
-    vendor/xiaomi/klee/proprietary/vendor/etc/seccomp_policy/android.hardware.media.c2@1.2-extended-seccomp-policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/android.hardware.media.c2@1.2-extended-seccomp-policy \
-    vendor/xiaomi/klee/proprietary/vendor/etc/seccomp_policy/android.hardware.media.c2@1.2-mediatek-seccomp-policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/android.hardware.media.c2@1.2-mediatek-seccomp-policy \
     vendor/xiaomi/klee/proprietary/vendor/etc/sensor_diag.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/sensor_diag.cfg \
     vendor/xiaomi/klee/proprietary/vendor/etc/slp_conf:$(TARGET_COPY_OUT_VENDOR)/etc/slp_conf \
     vendor/xiaomi/klee/proprietary/vendor/etc/smartpa_param/AW_DSP.bin:$(TARGET_COPY_OUT_VENDOR)/etc/smartpa_param/AW_DSP.bin \
@@ -2333,7 +2330,6 @@ PRODUCT_PACKAGES += \
     manifest_cameraprovider.xml \
     manifest_hwcomposer.xml \
     manifest_isphal.xml \
-    manifest_media_c2_default.xml \
     manifest_mmlpq.xml \
     manifest_mtkgpuserv.xml \
     manifest_uievent.xml \
@@ -2365,8 +2361,6 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss-service.mediatek \
     android.hardware.graphics.composer@3.3-service \
     android.hardware.identity-service.mitee@5.0 \
-    android.hardware.media.c2-mediatek-64b \
-    android.hardware.media.c2@1.2-mediatek-64b \
     android.hardware.neuralnetworks-shim-service-mtk \
     android.hardware.secure_element@1.2-service-mediatek \
     android.hardware.security.keymint@3.0-service.mitee \
