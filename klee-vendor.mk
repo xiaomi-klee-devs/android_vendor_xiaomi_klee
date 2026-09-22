@@ -2301,14 +2301,14 @@ PRODUCT_PACKAGES += \
     MtkTelephonyAssist \
     OpticalTestTool_klee \
     goodix_sz_klee \
+    androidx.camera.extensions.impl \
+    com.android.hotwordenrollment.common.util \
     mediatek-ims-base \
     mediatek-ims-common \
+    mediatek-ims-extension-plugin \
     mediatek-telecom-common \
     mediatek-telephony-base \
     mediatek-telephony-common \
-    androidx.camera.extensions.impl \
-    com.android.hotwordenrollment.common.util \
-    mediatek-ims-extension-plugin \
     CommandService.xml \
     android.hardware.audio.effect.service-aidl.xml \
     android.hardware.audio.service-aidl.mediatek.xml \
@@ -2880,8 +2880,8 @@ PRODUCT_PACKAGES += \
     vendor_lib64_rodinsc820csultra_mipi_raw_tuning_so
 
 PRODUCT_BOOT_JARS += \
-    mediatek-ims-base \
-    mediatek-ims-common \
-    mediatek-telecom-common \
-    mediatek-telephony-base \
-    mediatek-telephony-common
+    system_ext:mediatek-ims-base \
+    system_ext:mediatek-ims-common \
+    system_ext:mediatek-telecom-common \
+    system_ext:mediatek-telephony-base \
+    system_ext:mediatek-telephony-common
