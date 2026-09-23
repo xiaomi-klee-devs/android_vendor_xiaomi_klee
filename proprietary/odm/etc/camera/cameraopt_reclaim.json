@@ -6,8 +6,7 @@
             "dynamic_task_proctect_support": true,
             "blackList_mem_limit_support" : true,
             "deep_kill_support": false,
-            "support_force_page_out": true,
-            "gps_protect_list_support": true
+            "support_force_page_out": true
         },
         "threshold": {
             "skip_task": 4,
@@ -32,45 +31,36 @@
                 "name": "kill_policy",
                 "config": {
                     "oom_level": {
-                        "1536000": 51,
-                        "1843200": 101,
-                        "2048000": 251,
-                        "2252800": 700,
-                        "2560000": 702
+                        "51200": 0,
+                        "89600": 100,
+                        "128000": 200,
+                        "154200": 251,
+                        "200000": 700,
+                        "262144": 702,
+                        "393216": 800
                     },
                     "free_mem": {
-                        "102400": 251,
-                        "153600": 702,
-                        "204800": 800
+                        "12800": 702,
+                        "20480": 800,
+                        "32000": 900
                     },
                     "some_psi": {
                         "99": 50,
                         "40": 51,
-                        "26": 101,
-                        "20": 251,
-                        "18": 701,
-                        "16": 702,
-                        "12": 800,
-                        "8": 905,
-                        "5": 925
+                        "30": 101,
+                        "25": 251,
+                        "20": 701,
+                        "18": 702,
+                        "16": 800,
+                        "12": 905,
+                        "10": 925
                     },
                     "deepkill_policy" : {
-                        "251": 4,
+                        "200": 4,
                         "101": 8,
-                        "51": 16
+                        "51": 16,
+                        "50": 32
                     }
-                }
-            },
-            {
-                "name":"rekill_policy",
-                "config" : {
-                    "max_kill_count": 3,
-                    "killed_benifit_threshold": 153600,
-                    "lowadj_killed_benifit_threshold": 307200,
-                    "lowadj_interval_ms" : 60000,
-                    "reset_interval_ms" : 120000,
-                    "policy_change_psi": 20,
-                    "lowadj" : 250
                 }
             }
         ],
@@ -184,26 +174,6 @@
                     "com.miui.face",
                     "com.xiaomi.smarthome",
                     "client.pid"
-                ]
-            },
-            {
-                "name": "gps_protect_list",
-                "config": [
-                    "com.autonavi.minimap",
-                    "com.baidu.BaiduMap",
-                    "com.tencent.map",
-                    "com.google.android.apps.maps",
-                    "ru.yandex.yandexmaps",
-                    "com.waze",
-                    "com.google.earth",
-                    "com.strava",
-                    "de.komoot.android",
-                    "com.mapswithme.maps.pro",
-                    "ru.dublgis.dgismobile",
-                    "com.google.android.apps.mapslite",
-                    "com.huawei.maps.app",
-                    "com.sygic.aura",
-                    "com.alltrails.alltrails"
                 ]
             }
         ],
