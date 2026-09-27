@@ -562,7 +562,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/klee/proprietary/vendor/etc/chre/nearby.so:$(TARGET_COPY_OUT_VENDOR)/etc/chre/nearby.so \
     vendor/xiaomi/klee/proprietary/vendor/etc/chre/preloaded_nanoapps.json:$(TARGET_COPY_OUT_VENDOR)/etc/chre/preloaded_nanoapps.json \
     vendor/xiaomi/klee/proprietary/vendor/etc/default_pd_calibration.bin:$(TARGET_COPY_OUT_VENDOR)/etc/default_pd_calibration.bin \
-    vendor/xiaomi/klee/proprietary/vendor/etc/displayconfig/display_id_4627039422300187648.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4627039422300187648.xml \
     vendor/xiaomi/klee/proprietary/vendor/etc/dolby/dax-default-spatializer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default-spatializer.xml \
     vendor/xiaomi/klee/proprietary/vendor/etc/dolby/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml \
     vendor/xiaomi/klee/proprietary/vendor/etc/dolby/dax-fs19xx-spatializer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-fs19xx-spatializer.xml \
@@ -1213,6 +1212,7 @@ PRODUCT_PACKAGES += \
     libaal_sec \
     libaimemc \
     libaispq \
+    libalsautils-v34 \
     libapmonitor_vendor \
     libappgamepq \
     libapu_mdw \
