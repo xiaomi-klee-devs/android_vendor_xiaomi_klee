@@ -6,6 +6,7 @@ soong_namespace {
     imports: [
         "device/xiaomi/klee",
         "hardware/mediatek",
+        "hardware/mediatek/libaedv",
         "hardware/mediatek/libmtkperf_client",
         "hardware/xiaomi",
     ],
@@ -1270,7 +1271,7 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libutils",
                 "libutilscallstack",
-                "libalsautils",
+                "libalsautils-v34",
                 "libhardware_legacy",
                 "libhardware",
                 "libaudioutils",
@@ -3184,6 +3185,34 @@ cc_prebuilt_library_shared {
                 "libdl",
                 "libc",
                 "libm",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libalsautils-v34",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libalsautils-v34.so",
+            ],
+            shared_libs: [
+                "libaudioutils",
+                "libcutils",
+                "liblog",
+                "libtinyalsa",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
             ],
         },
     },
