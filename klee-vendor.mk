@@ -341,6 +341,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/klee/proprietary/odm/etc/dsi_p10_42_02_0b_dsc_vdo_mi.xml:$(TARGET_COPY_OUT_ODM)/etc/dsi_p10_42_02_0b_dsc_vdo_mi.xml \
     vendor/xiaomi/klee/proprietary/odm/etc/init.panel_info.sh:$(TARGET_COPY_OUT_ODM)/etc/init.panel_info.sh \
     vendor/xiaomi/klee/proprietary/odm/etc/init/display.rc:$(TARGET_COPY_OUT_ODM)/etc/init/display.rc \
+    vendor/xiaomi/klee/proprietary/odm/etc/init/touch_report.rc:$(TARGET_COPY_OUT_ODM)/etc/init/touch_report.rc \
     vendor/xiaomi/klee/proprietary/odm/etc/init/vendor.xiaomi.hardware.aidl.mtdservice-miteeservice.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.xiaomi.hardware.aidl.mtdservice-miteeservice.rc \
     vendor/xiaomi/klee/proprietary/odm/etc/init/vendor.xiaomi.hardware.aidl.tidaservice-miteeservice.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.xiaomi.hardware.aidl.tidaservice-miteeservice.rc \
     vendor/xiaomi/klee/proprietary/odm/etc/init/vendor.xiaomi.hardware.idmanager.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.xiaomi.hardware.idmanager.rc \
@@ -2406,6 +2407,7 @@ PRODUCT_PACKAGES += \
     mlipayd_mitee \
     mtd_mitee \
     tidad_mitee \
+    touch_report \
     toucheventcheck
 
 PRODUCT_PACKAGES += \
@@ -2447,6 +2449,12 @@ PRODUCT_PACKAGES += \
     odm_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_aov_default_sensor_ISP_mapping_db \
     odm_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_aov_default_sensor_ISP_param_db \
     odm_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_aov_ISP_info_db \
+    vendor_bin_touch_report \
+    vendor_etc_init_touch_report_rc \
+    vendor_lib64_libtouchreport_so \
+    vendor_lib64_libtouchreport_alg_so \
+    vendor_lib64_libtouchreport_hal_so \
+    vendor_lib64_libtouchreport_sensor_so \
     vendor_bin_hw_android_hardware_graphics_allocator-V2-service-mediatek \
     vendor_bin_hw_camerahalserver \
     vendor_etc_camera_mt6899_gma_custom_xml \
