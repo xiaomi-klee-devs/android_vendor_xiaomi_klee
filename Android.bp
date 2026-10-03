@@ -41210,48 +41210,6 @@ install_symlink {
 }
 
 install_symlink {
-    name: "vendor_bin_touch_report",
-    soc_specific: true,
-    installed_location: "bin/touch_report",
-    symlink_target: "/odm/bin/touch_report",
-}
-
-install_symlink {
-    name: "vendor_etc_init_touch_report_rc",
-    soc_specific: true,
-    installed_location: "etc/init/touch_report.rc",
-    symlink_target: "/odm/etc/init/touch_report.rc",
-}
-
-install_symlink {
-    name: "vendor_lib64_libtouchreport_so",
-    soc_specific: true,
-    installed_location: "lib64/libtouchreport.so",
-    symlink_target: "/odm/lib64/libtouchreport.so",
-}
-
-install_symlink {
-    name: "vendor_lib64_libtouchreport_alg_so",
-    soc_specific: true,
-    installed_location: "lib64/libtouchreport_alg.so",
-    symlink_target: "/odm/lib64/libtouchreport_alg.so",
-}
-
-install_symlink {
-    name: "vendor_lib64_libtouchreport_hal_so",
-    soc_specific: true,
-    installed_location: "lib64/libtouchreport_hal.so",
-    symlink_target: "/odm/lib64/libtouchreport_hal.so",
-}
-
-install_symlink {
-    name: "vendor_lib64_libtouchreport_sensor_so",
-    soc_specific: true,
-    installed_location: "lib64/libtouchreport_sensor.so",
-    symlink_target: "/odm/lib64/libtouchreport_sensor.so",
-}
-
-install_symlink {
     name: "vendor_bin_hw_android_hardware_graphics_allocator-V2-service-mediatek",
     soc_specific: true,
     installed_location: "bin/hw/android.hardware.graphics.allocator-V2-service-mediatek",
