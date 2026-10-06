@@ -12,31 +12,6 @@ soong_namespace {
 }
 
 cc_prebuilt_library_shared {
-    name: "av-audio-types-aidl-V3-ndk",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system/lib64/av-audio-types-aidl-V3-ndk.so",
-            ],
-            shared_libs: [
-                "libbinder_ndk",
-                "android.hardware.audio.core-V3-ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-}
-
-cc_prebuilt_library_shared {
     name: "APUWareApusysAidlServer",
     owner: "xiaomi",
     strip: {
@@ -40348,38 +40323,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "android.hardware.audio.parameter_parser.service",
-    owner: "xiaomi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/bin/hw/android.hardware.audio.parameter_parser.service",
-            ],
-            shared_libs: [
-                "android.hardware.audio.core-V3-ndk",
-                "av-audio-types-aidl-V3-ndk",
-                "libbase",
-                "libbinder_ndk",
-                "libmedia_helper",
-                "libmediautils",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    system_ext_specific: true,
-}
-
-cc_prebuilt_binary {
     name: "spkcal_88263s_m9",
     owner: "xiaomi",
     target: {
@@ -40771,6 +40714,30 @@ cc_prebuilt_binary {
                 "libmisight",
                 "libtida_mitee",
                 "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "touch_report",
+    owner: "xiaomi",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/bin/touch_report",
+            ],
+            shared_libs: [
+                "libtouchreport",
                 "libc",
                 "libm",
                 "libdl",
