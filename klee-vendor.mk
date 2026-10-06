@@ -341,7 +341,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/klee/proprietary/odm/etc/dsi_p10_42_02_0b_dsc_vdo_mi.xml:$(TARGET_COPY_OUT_ODM)/etc/dsi_p10_42_02_0b_dsc_vdo_mi.xml \
     vendor/xiaomi/klee/proprietary/odm/etc/init.panel_info.sh:$(TARGET_COPY_OUT_ODM)/etc/init.panel_info.sh \
     vendor/xiaomi/klee/proprietary/odm/etc/init/display.rc:$(TARGET_COPY_OUT_ODM)/etc/init/display.rc \
-    vendor/xiaomi/klee/proprietary/odm/etc/init/touch_report.rc:$(TARGET_COPY_OUT_ODM)/etc/init/touch_report.rc \
     vendor/xiaomi/klee/proprietary/odm/etc/init/vendor.xiaomi.hardware.aidl.mtdservice-miteeservice.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.xiaomi.hardware.aidl.mtdservice-miteeservice.rc \
     vendor/xiaomi/klee/proprietary/odm/etc/init/vendor.xiaomi.hardware.aidl.tidaservice-miteeservice.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.xiaomi.hardware.aidl.tidaservice-miteeservice.rc \
     vendor/xiaomi/klee/proprietary/odm/etc/init/vendor.xiaomi.hardware.idmanager.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.xiaomi.hardware.idmanager.rc \
