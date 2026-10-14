@@ -6,9 +6,35 @@ soong_namespace {
     imports: [
         "device/xiaomi/klee",
         "hardware/mediatek",
+        "hardware/mediatek/libaedv",
         "hardware/mediatek/libmtkperf_client",
         "hardware/xiaomi",
     ],
+}
+
+cc_prebuilt_library_shared {
+    name: "av-audio-types-aidl-V3-ndk",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system/lib64/av-audio-types-aidl-V3-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "android.hardware.audio.core-V3-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
 }
 
 cc_prebuilt_library_shared {
@@ -40320,6 +40346,38 @@ cc_prebuilt_binary {
     },
     prefer: true,
     soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "android.hardware.audio.parameter_parser.service",
+    owner: "xiaomi",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/bin/hw/android.hardware.audio.parameter_parser.service",
+            ],
+            shared_libs: [
+                "android.hardware.audio.core-V3-ndk",
+                "av-audio-types-aidl-V3-ndk",
+                "libbase",
+                "libbinder_ndk",
+                "libmedia_helper",
+                "libmediautils",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    system_ext_specific: true,
 }
 
 cc_prebuilt_binary {

@@ -381,6 +381,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/klee/proprietary/odm/mitee/ta/a3ba6512-6e0e-4065-93165e4a7d04ca08.ta:$(TARGET_COPY_OUT_ODM)/mitee/ta/a3ba6512-6e0e-4065-93165e4a7d04ca08.ta \
     vendor/xiaomi/klee/proprietary/odm/mitee/ta/d32d9207-6285-6d86-6cb98eaf46f6b4ec.ta:$(TARGET_COPY_OUT_ODM)/mitee/ta/d32d9207-6285-6d86-6cb98eaf46f6b4ec.ta \
     vendor/xiaomi/klee/proprietary/system/etc/public.libraries-mtk.txt:$(TARGET_COPY_OUT_SYSTEM)/etc/public.libraries-mtk.txt \
+    vendor/xiaomi/klee/proprietary/system_ext/etc/init/android.hardware.audio.parameter_parser.service.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/android.hardware.audio.parameter_parser.service.rc \
     vendor/xiaomi/klee/proprietary/system_ext/etc/init/init.vtservice.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.vtservice.rc \
     vendor/xiaomi/klee/proprietary/system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.hotwordenrollment.common.util.xml \
     vendor/xiaomi/klee/proprietary/system_ext/etc/sysconfig/com.mediatek.ims.config.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/com.mediatek.ims.config.xml \
@@ -1116,6 +1117,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/klee/proprietary/vendor/mitee/ta/f13010e0-2ae1-11e5-896a0002a5d5c51d.ta:$(TARGET_COPY_OUT_VENDOR)/mitee/ta/f13010e0-2ae1-11e5-896a0002a5d5c51d.ta
 
 PRODUCT_PACKAGES += \
+    av-audio-types-aidl-V3-ndk \
     APUWareApusysAidlServer \
     APUWareUtilsAidlServer \
     android.hardware.audio.core-impl-mediatek \
@@ -2392,6 +2394,7 @@ PRODUCT_PACKAGES += \
     wlan_assistant \
     wmt_launcher \
     wmt_loader \
+    android.hardware.audio.parameter_parser.service \
     spkcal_88263s_m9 \
     spkcal_p10 \
     spkcal_si_o12u \
