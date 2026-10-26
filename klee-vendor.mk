@@ -2014,7 +2014,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.mmagent@1.1 \
     vendor.mediatek.hardware.mmlpq-V3-ndk \
     vendor.mediatek.hardware.mms-V1-ndk \
-    vendor.mediatek.hardware.mtkpower-V1-ndk \
     vendor.mediatek.hardware.mtkradioex.assist-V2-ndk \
     vendor.mediatek.hardware.mtkradioex.atci-V1-ndk \
     vendor.mediatek.hardware.mtkradioex.cap-V1-ndk \
