@@ -2002,7 +2002,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.gnss.batching-V1-ndk \
     vendor.mediatek.hardware.gpuserv-V2-ndk \
     vendor.mediatek.hardware.lbs-V1-ndk \
-    vendor.mediatek.hardware.lbs@1.0 \
     vendor.mediatek.hardware.mbrain-V6-ndk \
     vendor.mediatek.hardware.mdmonitor-V1-ndk \
     vendor.mediatek.hardware.mdmonitor@1.0 \
