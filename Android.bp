@@ -8045,6 +8045,86 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libjc_keymint.nxp",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libjc_keymint.nxp.so",
+            ],
+            shared_libs: [
+                "libkeymint_shim",
+                "android.hardware.security.rkp-V3-ndk",
+                "android.hardware.security.secureclock-V1-ndk",
+                "android.hardware.security.sharedsecret-V1-ndk",
+                "lib_android_keymaster_keymint_utils-v36",
+                "libbase-v36",
+                "libbinder",
+                "libcppbor",
+                "libkeymaster_portable",
+                "libkeymaster_messages",
+                "libsoft_attestation_cert",
+                "liblog",
+                "libcrypto",
+                "libcutils",
+                "libutils",
+                "libjc_keymint_transport.nxp",
+                "libbinder_ndk",
+                "libmemunreachable",
+                "android.hardware.security.keymint-V3-ndk-v36",
+                "android.hardware.secure_element-V1-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libjc_keymint_transport.nxp",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libjc_keymint_transport.nxp.so",
+            ],
+            shared_libs: [
+                "libkeymint_shim",
+                "android.hardware.security.keymint-V3-ndk-v36",
+                "android.se.omapi-V1-ndk",
+                "android.hardware.secure_element-V1-ndk",
+                "libbase-v36",
+                "liblog",
+                "libcutils",
+                "libutils",
+                "libhardware",
+                "libhardware_legacy",
+                "libhidlbase",
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libjpeg-alpha-oal_vendor",
     owner: "xiaomi",
     strip: {
@@ -39403,6 +39483,48 @@ cc_prebuilt_binary {
                 "android.hardware.radio.modem-V3-ndk",
                 "vendor.mediatek.hardware.mtkradioex.sim-V1-ndk",
                 "vendor.mediatek.hardware.mtkradioex.se-V1-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "android.hardware.security.keymint-service.strongbox.nxp",
+    owner: "xiaomi",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/hw/android.hardware.security.keymint-service.strongbox.nxp",
+            ],
+            shared_libs: [
+                "libkeymint_shim",
+                "android.hardware.security.rkp-V3-ndk",
+                "android.hardware.security.sharedsecret-V1-ndk",
+                "lib_android_keymaster_keymint_utils-v36",
+                "android.se.omapi-V1-ndk",
+                "libbase-v36",
+                "libbinder_ndk",
+                "libcppbor",
+                "libcrypto",
+                "libkeymaster_portable",
+                "libjc_keymint.nxp",
+                "libjc_keymint_transport.nxp",
+                "liblog",
+                "libutils",
+                "libhidlbase",
+                "android.hardware.security.keymint-V3-ndk-v36",
+                "android.hardware.secure_element-V1-ndk",
                 "libc++",
                 "libc",
                 "libm",

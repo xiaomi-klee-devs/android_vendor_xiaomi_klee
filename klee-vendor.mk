@@ -608,6 +608,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/klee/proprietary/vendor/etc/init/android.hardware.identity@5.0-service.mitee.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.identity@5.0-service.mitee.rc \
     vendor/xiaomi/klee/proprietary/vendor/etc/init/android.hardware.neuralnetworks-shim-service-mtk.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.neuralnetworks-shim-service-mtk.rc \
     vendor/xiaomi/klee/proprietary/vendor/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc \
+    vendor/xiaomi/klee/proprietary/vendor/etc/init/android.hardware.security.keymint-service.strongbox.nxp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint-service.strongbox.nxp.rc \
     vendor/xiaomi/klee/proprietary/vendor/etc/init/android.hardware.security.keymint.mitee@3.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint.mitee@3.0-service.rc \
     vendor/xiaomi/klee/proprietary/vendor/etc/init/android.hardware.tetheroffload-V1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.tetheroffload-V1-service.rc \
     vendor/xiaomi/klee/proprietary/vendor/etc/init/camerahalserver.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/camerahalserver.rc \
@@ -736,6 +737,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/klee/proprietary/vendor/etc/nnapi_powerhal.json:$(TARGET_COPY_OUT_VENDOR)/etc/nnapi_powerhal.json \
     vendor/xiaomi/klee/proprietary/vendor/etc/p10_36_02_0a_dsc_vdo_dbi.bin:$(TARGET_COPY_OUT_VENDOR)/etc/p10_36_02_0a_dsc_vdo_dbi.bin \
     vendor/xiaomi/klee/proprietary/vendor/etc/p10_42_02_0b_dsc_vdo_dbi.bin:$(TARGET_COPY_OUT_VENDOR)/etc/p10_42_02_0b_dsc_vdo_dbi.bin \
+    vendor/xiaomi/klee/proprietary/vendor/etc/permissions/android.hardware.hardware_keystore.jc-strongbox-keymint.nxp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.hardware_keystore.jc-strongbox-keymint.nxp.xml \
     vendor/xiaomi/klee/proprietary/vendor/etc/permissions/android.hardware.identity_credential.mitee.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.identity_credential.mitee.xml \
     vendor/xiaomi/klee/proprietary/vendor/etc/permissions/camera_extensions.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/camera_extensions.xml \
     vendor/xiaomi/klee/proprietary/vendor/etc/permissions/com.mediatek.hardware.vow.gva.tflite.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.mediatek.hardware.vow.gva.tflite.xml \
@@ -1365,6 +1367,8 @@ PRODUCT_PACKAGES += \
     libion_mtk \
     libion_ulit \
     libipsec_ims_shr \
+    libjc_keymint.nxp \
+    libjc_keymint_transport.nxp \
     libjpeg-alpha-oal_vendor \
     libjpeg-alpha_vendor \
     libjpegdecoder_klee \
@@ -2362,6 +2366,7 @@ PRODUCT_PACKAGES += \
     android.hardware.identity-service.mitee@5.0 \
     android.hardware.neuralnetworks-shim-service-mtk \
     android.hardware.secure_element@1.2-service-mediatek \
+    android.hardware.security.keymint-service.strongbox.nxp \
     android.hardware.security.keymint@3.0-service.mitee \
     android.hardware.graphics.allocator-V2-service-mediatek.mt6899 \
     camerahalserver \
