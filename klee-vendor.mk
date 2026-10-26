@@ -1119,7 +1119,6 @@ PRODUCT_PACKAGES += \
     APUWareUtilsAidlServer \
     android.frameworks.displayservice@1.0 \
     android.hardware.audio.core-impl-mediatek \
-    android.hardware.bluetooth.audio-impl-mediatek \
     android.hardware.security.keymint-V3-ndk-v36 \
     c2.dolby.client \
     c2.dolby.hevc.dec \
@@ -1245,7 +1244,6 @@ PRODUCT_PACKAGES += \
     libbase-v36 \
     libbessound_hd_mtk_vendor \
     libblisrc32_vendor \
-    libbluetooth_audio_session_aidl_mtk \
     libbluetooth_mtk \
     libbluetooth_mtk_pure \
     libbt-vendor \
@@ -2013,26 +2011,7 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.mmagent@1.1 \
     vendor.mediatek.hardware.mmlpq-V3-ndk \
     vendor.mediatek.hardware.mms-V1-ndk \
-    vendor.mediatek.hardware.mtkradioex.assist-V2-ndk \
-    vendor.mediatek.hardware.mtkradioex.atci-V1-ndk \
-    vendor.mediatek.hardware.mtkradioex.cap-V1-ndk \
-    vendor.mediatek.hardware.mtkradioex.data-V3-ndk \
-    vendor.mediatek.hardware.mtkradioex.dch-V2-ndk \
-    vendor.mediatek.hardware.mtkradioex.em-V1-ndk \
-    vendor.mediatek.hardware.mtkradioex.ims-V2-ndk \
-    vendor.mediatek.hardware.mtkradioex.messaging-V1-ndk \
-    vendor.mediatek.hardware.mtkradioex.modem-V3-ndk \
-    vendor.mediatek.hardware.mtkradioex.mwi-V1-ndk \
-    vendor.mediatek.hardware.mtkradioex.network-V1-ndk \
-    vendor.mediatek.hardware.mtkradioex.rcs-V2-ndk \
-    vendor.mediatek.hardware.mtkradioex.rsu-V1-ndk \
-    vendor.mediatek.hardware.mtkradioex.se-V1-ndk \
-    vendor.mediatek.hardware.mtkradioex.sim-V1-ndk \
-    vendor.mediatek.hardware.mtkradioex.sim-V2-ndk \
-    vendor.mediatek.hardware.mtkradioex.smartratswitch-V1-ndk \
-    vendor.mediatek.hardware.mtkradioex.voice-V1-ndk \
-    vendor.mediatek.hardware.netdagent-V1-ndk \
-    vendor.mediatek.hardware.netdagent@1.0 \
+    vendor.mediatek.hardware.mtkpower-V1-ndk \
     vendor.mediatek.hardware.neuropilot.agent-V1-ndk \
     vendor.mediatek.hardware.neuropilot.agent@1.0 \
     vendor.mediatek.hardware.neuropilot.agent@1.1 \
@@ -2326,7 +2305,6 @@ PRODUCT_PACKAGES += \
     android.hardware.security.secureclock-service.mitee.xml \
     android.hardware.security.sharedsecret-service.mitee.xml \
     android.hardware.tetheroffload-V1-service.xml \
-    bluetooth_audio_mtk.xml \
     dms-service.xml \
     gnss-mtk-default.xml \
     gnss-mtk.xml \
