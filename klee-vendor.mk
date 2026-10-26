@@ -1244,6 +1244,7 @@ PRODUCT_PACKAGES += \
     libbase-v36 \
     libbessound_hd_mtk_vendor \
     libblisrc32_vendor \
+    libbluetooth_audio_session_aidl_mtk \
     libbluetooth_mtk \
     libbluetooth_mtk_pure \
     libbt-vendor \
