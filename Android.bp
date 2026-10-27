@@ -178,7 +178,7 @@ cc_prebuilt_library_shared {
                 "libfmq",
                 "liblog",
                 "libbluetooth_audio_session_aidl_mtk",
-                "vendor.mediatek.hardware.bluetooth.audio-V3-ndk",
+                "vendor.mediatek.hardware.bluetooth.audio-V1-ndk",
                 "vendor.mediatek.hardware.bluetooth.audio@2.1",
                 "vendor.mediatek.hardware.bluetooth.audio@2.2",
                 "libc++",
@@ -1304,7 +1304,7 @@ cc_prebuilt_library_shared {
                 "libhwbinder",
                 "vendor.mediatek.hardware.bluetooth.audio@2.1",
                 "vendor.mediatek.hardware.bluetooth.audio@2.2",
-                "vendor.mediatek.hardware.bluetooth.audio-V3-ndk",
+                "vendor.mediatek.hardware.bluetooth.audio-V1-ndk",
                 "android.hardware.bluetooth.audio-V4-ndk",
                 "android.hardware.audio.common@5.0",
                 "libtinycompress",
@@ -4153,7 +4153,7 @@ cc_prebuilt_library_shared {
                 "libbinder_ndk",
                 "libfmq",
                 "liblog",
-                "vendor.mediatek.hardware.bluetooth.audio-V3-ndk",
+                "vendor.mediatek.hardware.bluetooth.audio-V1-ndk",
                 "libhidlbase",
                 "libxml2",
                 "libflatbuffers-cpp",
@@ -28818,6 +28818,34 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "vendor.mediatek.hardware.bluetooth.audio-V1-ndk",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.mediatek.hardware.bluetooth.audio-V1-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "android.hardware.common-V2-ndk",
+                "android.hardware.common.fmq-V1-ndk",
+                "android.hardware.audio.common-V3-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "vendor.mediatek.hardware.camera.aovservice-V3-ndk",
     owner: "xiaomi",
     strip: {
@@ -38688,6 +38716,15 @@ prebuilt_etc_xml {
     name: "android.hardware.tetheroffload-V1-service.xml",
     owner: "xiaomi",
     src: "proprietary/vendor/etc/vintf/manifest/android.hardware.tetheroffload-V1-service.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "bluetooth_audio_mtk.xml",
+    owner: "xiaomi",
+    src: "proprietary/vendor/etc/vintf/manifest/bluetooth_audio_mtk.xml",
     filename_from_src: true,
     sub_dir: "vintf/manifest",
     soc_specific: true,

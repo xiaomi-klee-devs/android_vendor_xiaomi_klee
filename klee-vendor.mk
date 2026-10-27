@@ -1982,6 +1982,7 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.apuware.apusys-V5-ndk-vendor \
     vendor.mediatek.hardware.apuware.utils-V1-ndk-vendor \
     vendor.mediatek.hardware.apuware.utils@2.0-vendor \
+    vendor.mediatek.hardware.bluetooth.audio-V1-ndk \
     vendor.mediatek.hardware.camera.aovservice-V3-ndk \
     vendor.mediatek.hardware.camera.atms-V1-ndk \
     vendor.mediatek.hardware.camera.atms@1.0 \
@@ -2319,6 +2320,7 @@ PRODUCT_PACKAGES += \
     android.hardware.security.secureclock-service.mitee.xml \
     android.hardware.security.sharedsecret-service.mitee.xml \
     android.hardware.tetheroffload-V1-service.xml \
+    bluetooth_audio_mtk.xml \
     dms-service.xml \
     gnss-mtk-default.xml \
     gnss-mtk.xml \
