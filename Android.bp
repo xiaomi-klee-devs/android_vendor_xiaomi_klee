@@ -6,6 +6,7 @@ soong_namespace {
     imports: [
         "device/xiaomi/klee",
         "hardware/mediatek",
+        "hardware/mediatek/libion_mtk",
         "hardware/mediatek/libmtkperf_client",
         "hardware/xiaomi",
     ],
@@ -7963,34 +7964,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libion_mtk",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libion_mtk.so",
-            ],
-            shared_libs: [
-                "libion",
-                "liblog",
-                "libion_ulit",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libion_ulit",
     owner: "xiaomi",
     strip: {
@@ -8319,33 +8292,6 @@ cc_prebuilt_library_shared {
                 "libcrypto",
                 "libutils",
                 "libhardware",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libladder",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libladder.so",
-            ],
-            shared_libs: [
-                "libunwindstack",
-                "liblog",
-                "libbase",
                 "libc++",
                 "libc",
                 "libm",
@@ -38648,30 +38594,10 @@ dex_import {
 }
 
 dex_import {
-    name: "mediatek-telecom-common",
-    owner: "xiaomi",
-    jars: [
-        "proprietary/system_ext/framework/mediatek-telecom-common.jar",
-    ],
-    system_ext_specific: true,
-    use_generic_config: true,
-}
-
-dex_import {
     name: "mediatek-telephony-base",
     owner: "xiaomi",
     jars: [
         "proprietary/system_ext/framework/mediatek-telephony-base.jar",
-    ],
-    system_ext_specific: true,
-    use_generic_config: true,
-}
-
-dex_import {
-    name: "mediatek-telephony-common",
-    owner: "xiaomi",
-    jars: [
-        "proprietary/system_ext/framework/mediatek-telephony-common.jar",
     ],
     system_ext_specific: true,
     use_generic_config: true,
@@ -40550,33 +40476,6 @@ cc_prebuilt_binary {
                 "libnetutils",
                 "libc++",
                 "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "wlan_assistant",
-    owner: "xiaomi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/wlan_assistant",
-            ],
-            shared_libs: [
-                "libc",
-                "liblog",
-                "libcutils",
-                "libnl",
-                "libc++",
                 "libm",
                 "libdl",
             ],

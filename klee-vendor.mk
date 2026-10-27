@@ -641,7 +641,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/klee/proprietary/vendor/etc/init/vendor.mediatek.hardware.pq_aidl-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.pq_aidl-service.rc \
     vendor/xiaomi/klee/proprietary/vendor/etc/init/vendor.xiaomi.hardware.displayfeature_aidl-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.displayfeature_aidl-service.rc \
     vendor/xiaomi/klee/proprietary/vendor/etc/init/volte_clientapi_ua.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/volte_clientapi_ua.rc \
-    vendor/xiaomi/klee/proprietary/vendor/etc/init/wlan_assistant.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wlan_assistant.rc \
     vendor/xiaomi/klee/proprietary/vendor/etc/libnfc-nxp-pnscr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp-pnscr.conf \
     vendor/xiaomi/klee/proprietary/vendor/etc/mali_platform.config:$(TARGET_COPY_OUT_VENDOR)/etc/mali_platform.config \
     vendor/xiaomi/klee/proprietary/vendor/etc/media_codecs_dolby_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_dolby_audio.xml \
@@ -1364,7 +1363,6 @@ PRODUCT_PACKAGES += \
     libimagebuffer_wrapper \
     libimgstream_sync \
     libimgsys_osal \
-    libion_mtk \
     libion_ulit \
     libipsec_ims_shr \
     libjc_keymint.nxp \
@@ -1376,7 +1374,6 @@ PRODUCT_PACKAGES += \
     libkeymint-v36 \
     libkeymint_remote_prov_support-v36 \
     libkeymint_support-v36 \
-    libladder \
     libmbrainSDKv \
     libmcve \
     libmetatagwrapper \
@@ -2311,9 +2308,7 @@ PRODUCT_PACKAGES += \
     mediatek-ims-base \
     mediatek-ims-common \
     mediatek-ims-extension-plugin \
-    mediatek-telecom-common \
     mediatek-telephony-base \
-    mediatek-telephony-common \
     CommandService.xml \
     android.hardware.audio.effect.service-aidl.xml \
     android.hardware.audio.service-aidl.mediatek.xml \
@@ -2397,7 +2392,6 @@ PRODUCT_PACKAGES += \
     touch_boost \
     volte_clientapi_ua \
     volte_rcs_ua \
-    wlan_assistant \
     wmt_launcher \
     wmt_loader \
     spkcal_88263s_m9 \
@@ -2887,6 +2881,4 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     system_ext:mediatek-ims-base \
     system_ext:mediatek-ims-common \
-    system_ext:mediatek-telecom-common \
-    system_ext:mediatek-telephony-base \
-    system_ext:mediatek-telephony-common
+    system_ext:mediatek-telephony-base
