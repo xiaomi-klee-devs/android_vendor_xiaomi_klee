@@ -23,7 +23,7 @@ on fs
     chown system system /dev/rpmb0
     chown system system /dev/mmcblk0rpmb
     chown system system /dev/0:0:0:49476
-    chown system system /dev/ufs-bsg0
+    chown root system /dev/ufs-bsg0
 #    enable vendor.keymaster-4-0-mitee
     enable vendor.keymint-mitee
     start tee-supplicant
